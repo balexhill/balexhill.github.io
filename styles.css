@@ -1,1 +1,77 @@
+/*
+---------------------
+GENERAL STYLES
+---------------------
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
 
+body, html {
+	font: normal 16px sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+h2 {
+  color: #414a4f;
+	font: 300 32px 'Open Sans', sans-serif;
+	text-align: center;
+}
+
+/*
+---------------------
+HOME STYLES
+---------------------
+*/
+
+.home-content {
+  padding-top: 50px;
+  padding-bottom: 40px;
+  background-color: #fefff4;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.home-content svg {
+  color: #65615b;
+  opacity: 0.8;
+}
+
+.home-content a:hover {
+  opacity: 1;
+}
+
+h1.top-name-title{
+  color: #48baf8;
+  font-family: 'Aguafina Script', cursive;
+  font-size: 45px;
+  text-transform: lowercase;
+}
+
+h1.bottom-name-title{
+  font-size: 70px;
+  color: #ffa9e7;
+  text-transform: uppercase;
+	margin-bottom: 15px;
+  font-family: 'Bungee Outline', cursive;
+  -webkit-animation: neon 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon 1.5s ease-in-out infinite alternate;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes neon {
+  from {
+    text-shadow: 0 0 10px #ffa9e7, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffa9e7, 0 0 70px #ffa9e7, 0 0 80px #ffa9e7, 0 0 100px #ffa9e7, 0 0 150px #ffa9e7;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 35px #fff, 0 0 20px #ffa9e7, 0 0 35px #ffa9e7, 0 0 40px #ffa9e7, 0 0 75px #ffa9e7, 0 0 75px #ffa9e7;
+  }
+}
+
+@media (max-width: 600px) {
+  h1.bottom-name-title {
+    font-size: 50px;
+  }
+}
