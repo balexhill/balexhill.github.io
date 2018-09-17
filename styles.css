@@ -70,8 +70,8 @@ h1.bottom-name-title{
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   h1.bottom-name-title {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
