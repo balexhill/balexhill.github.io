@@ -12,45 +12,60 @@ body, html {
 	font: normal 16px sans-serif;
   width: 100vw;
   height: 100vh;
-}
-
-h2 {
-  color: #414a4f;
-	font: 300 32px 'Open Sans', sans-serif;
-	text-align: center;
+  line-height: 1.5;
 }
 
 /*
 ---------------------
-HOME STYLES
+MAIN STYLES
 ---------------------
 */
 
-.home-content {
-  padding-top: 12em;
-  padding-bottom: 40px;
+section {
   background-color: #fefff4;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 75%;
   text-align: center;
-  min-height: 100vh;
 }
 
-.home-content svg {
+h3 {
+	color: #414a4f;
+  font: 300 32px 'Open Sans', sans-serif;
+  padding-bottom: 2em;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
   color: #65615b;
+  margin: 20px;
+  cursor: pointer;
   opacity: 0.8;
+  font-size: 1.25em;
 }
 
-.home-content a:hover {
-  opacity: 1;
-}
-
-h1.top-name-title{
+.smaller-font {
   color: #48baf8;
   font-family: 'Aguafina Script', cursive;
   font-size: 45px;
   text-transform: lowercase;
 }
 
-h1.bottom-name-title{
+.bigger-font{
   font-size: 70px;
   color: #ffa9e7;
   text-transform: uppercase;
@@ -71,7 +86,7 @@ h1.bottom-name-title{
 }
 
 @media (max-width: 500px) {
-  h1.bottom-name-title {
+  .bigger-font {
     font-size: 40px;
   }
 }
