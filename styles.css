@@ -47,11 +47,13 @@ ul {
 
 li {
   list-style-type: none;
+  display: inline-block;
 }
 
-a {
+li a {
   text-decoration: none;
   color: #65615b;
+  display: inline-block;
   margin: 20px;
   cursor: pointer;
   opacity: 0.8;
@@ -66,7 +68,7 @@ a {
 }
 
 .bigger-font{
-  font-size: 70px;
+  font-size: 80px;
   color: #ffa9e7;
   text-transform: uppercase;
 	margin-bottom: 15px;
@@ -87,6 +89,6 @@ a {
 
 @media (max-width: 500px) {
   .bigger-font {
-    font-size: 40px;
+    font-size: 50px;
   }
 }
